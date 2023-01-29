@@ -1,68 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-html, body {
-    background-image: url('./assets/background-image.png');
-    background-size: cover;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: white;
-    position: relative;
+html,
+body {
+  background-image: url("./assets/background-image.png");
+  background-size: cover;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: #f8f8f2;
+  position: relative;
 }
 
 h1 {
-    font-size: calc(1.5vw + 18px);
-    text-align: center;
+  font-size: calc(1.5vw + 18px);
+  text-align: center;
 }
 
 ::placeholder {
-    color: white;
-    font-size: 18px;
-    opacity: 50%;
-    padding: 10px;
+  color: #f8f8f2;
+  font-size: 18px;
+  opacity: 50%;
+  padding: 10px;
 }
 
 #popup {
-    background-color: rgb(1, 33, 105);
-    width: 750px;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
-    padding: 10px;
-    box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5)  ; 
+  background-color: #282a36;
+  width: 750px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  padding: 10px;
+  box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 11px 37px rgba(0, 0, 0, 0.5);
 }
 
 input {
-    width: 730px;
-    height: 50px;
-    background-color:rgb(36, 72, 156);
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    transition: 0.25s;
-    margin-bottom: 5px;
+  width: 730px;
+  height: 50px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.25s;
+  margin-bottom: 5px;
 }
 
 input:hover {
-    background-color: rgb(78, 112, 192);
+  background-color: #626579;
 }
 
 button {
-    width: 750px;
-    height: 70px;
-    background-color:rgb(36, 72, 156);
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-    transition: 0.25s
+  width: 750px;
+  height: 70px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.25s;
 }
 
 button:hover {
-    background-color: rgb(78, 112, 192);
+  background-color: #f8f8f2;
 }
