@@ -2,8 +2,8 @@ function sendAssignment() {
   const subjectName = document.getElementById("subject").value;
   const assignmentName = document.getElementById("assignment").value;
   const date = new Date().toJSON();
-  const webhookUrl =
-    "https://discord.com/api/webhooks/1069088693031272578/zDdnvFuY_QrOWJg2DF4ruZgNn8M63GlcwFUUBgYUhX_e9T2kqROZOU_boPFQxW4fikdD"; // Put Webhook URL here.
+  const urlParams = new URLSearchParams(window.location.search);
+  const webhookUrl = urlParams.get('webhook_url') 
   const webhookContents = {
     content: "@everyone",
     embeds: [
