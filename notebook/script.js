@@ -1,12 +1,16 @@
+const urlParams = new URLSearchParams(window.location.search);
+const webhookUrl = urlParams.get("webhook_url");
+if (webhookUrl == "") {
+  window.location.href("https://assignment-notebook.netlify.app/");
+}
+
 function sendAssignment() {
   const subjectName = document.getElementById("subject").value;
   const assignmentName = document.getElementById("assignment").value;
   const date = new Date().toJSON();
   const urlParams = new URLSearchParams(window.location.search);
-  const webhookUrl = urlParams.get('webhook_url') 
-  if (webhookUrl == "") {
-    window.location.replace('https://assignment-notebook.netlify.app/')
-  }
+  const webhookUrl = urlParams.get("webhook_url");
+  console.log(webhookUrl);
   const webhookContents = {
     content: "@everyone",
     embeds: [
