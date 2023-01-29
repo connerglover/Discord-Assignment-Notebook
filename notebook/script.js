@@ -4,6 +4,9 @@ function sendAssignment() {
   const date = new Date().toJSON();
   const urlParams = new URLSearchParams(window.location.search);
   const webhookUrl = urlParams.get('webhook_url') 
+  if (webhookUrl == "") {
+    window.location.replace('https://assignment-notebook.netlify.app/')
+  }
   const webhookContents = {
     content: "@everyone",
     embeds: [
