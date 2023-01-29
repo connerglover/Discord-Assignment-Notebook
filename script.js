@@ -1,7 +1,7 @@
 function sendAssignment() {
   const subjectName = document.getElementById("subject").value;
   const assignmentName = document.getElementById("assignment").value;
-  const webhookUrl = "https://discord.com/api/webhooks/1069088693031272578/zDdnvFuY_QrOWJg2DF4ruZgNn8M63GlcwFUUBgYUhX_e9T2kqROZOU_boPFQxW4fikdD"; // Put Webhook URL here.
+  const webhookUrl = "https://discord.com/api/webhooks/1069090200195715092/4Mb9Nb6Eqa0UBZFViSNxIqQqyyTYJ3oRij74OCe09l2Bt9pL5hBbMJbLUcuOTujsqFGS"; // Put Webhook URL here.
   const webhookContents = {
     content: "**New Assignment!**",
     embeds: [
